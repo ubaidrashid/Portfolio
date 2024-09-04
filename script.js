@@ -122,11 +122,20 @@ function page2Animation() {
             })
         })
         elem.addEventListener("mousemove", function (dets) {
-
+             const innerWidth  = window.innerWidth
+             console.log(innerWidth);
+             
+        if(innerWidth < 600){
+            gsap.to(elem.childNodes[5], {
+                x: dets.x - elem.getBoundingClientRect().x - 90,
+                y: dets.y - elem.getBoundingClientRect().y - 90
+            })
+        }else{
             gsap.to(elem.childNodes[5], {
                 x: dets.x - elem.getBoundingClientRect().x - 90,
                 y: dets.y - elem.getBoundingClientRect().y - 215
             })
+        }
         })
     })
 }
@@ -288,8 +297,8 @@ locomotiveAnimation('#main')
 
 page2Animation()
 
-page3VideoAnimation()
+// page3VideoAnimation()
 
-page6Animations()
+// page6Animations()
 
 loadingAnimation()
