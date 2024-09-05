@@ -5,34 +5,47 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fff;
 }
-:root{
-    --primary-black:#111;
-    --primary-text-white:white;
+
+:root {
+    --primary-black: #111;
+    --primary-text-white: white;
 
 }
+
 html,
 body {
     height: 100%;
     width: 100%;
-    overflow-x:hidden ;
+    overflow-x: hidden;
 
     background-color: var(--primary-black);
 }
 
-#cursor{
-    height: 1.75rem; /* h-7 */
-    width: 1.75rem; /* w-7 */
-    display: flex; /* flex */
-    align-items: center; /* items-center */
-    justify-content: center; /* justify-center */
-    text-align: center; /* text-center */
-    background-color: white; /* bg-white */
-    z-index: 9; /* z-10 */
-    position: fixed; /* fixed */
-    border-radius: 9999px; /* rounded-full */
+#cursor {
+    height: 1.75rem;
+    /* h-7 */
+    width: 1.75rem;
+    /* w-7 */
+    display: flex;
+    /* flex */
+    align-items: center;
+    /* items-center */
+    justify-content: center;
+    /* justify-center */
+    text-align: center;
+    /* text-center */
+    background-color: white;
+    /* bg-white */
+    z-index: 9;
+    /* z-10 */
+    position: fixed;
+    /* fixed */
+    border-radius: 9999px;
+    /* rounded-full */
     box-shadow: 0 0 100px 15px rgba(255, 255, 255, 0.9);
 }
-.overlay{
+
+.overlay {
     /* background-color: rgba(255, 0, 0, 0.13); */
     position: absolute;
     height: 100%;
@@ -56,15 +69,15 @@ nav {
 nav h1 {
     font-size: 1.6vw;
 }
-#nav_part1{
-    display: flex ;
+
+#nav_part1 {
+    display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-#nav_part1 h4{
-  
-}
+
+
 #nav_part1 h4 a {
     text-decoration: none;
     display: flex;
@@ -74,9 +87,12 @@ nav h1 {
     justify-content: center;
     gap: 4px;
 }
-#nav_part1 h4 svg{
-   height: 1.03rem;width: 1.03rem;
+
+#nav_part1 h4 svg {
+    height: 1.03rem;
+    width: 1.03rem;
 }
+
 .nav-part2 {
     display: flex;
     gap: 2vw;
@@ -123,11 +139,15 @@ nav button svg {
     height: 0.8vw;
     margin-left: 1.6vw;
 }
-#guitarSvg{
-width: 100%;
-height: 200px;
-top: 0;
-background-color:red;
+
+#guitarSvg {
+    width: 100%;
+    height: 200px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
 }
 
 #nav-bottom {
@@ -181,6 +201,7 @@ background-color:red;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 #page1-something h4 {
@@ -189,8 +210,19 @@ background-color:red;
     text-transform: lowercase;
     margin-top: 0.5vw;
     padding: 9px 18px;
+
     border: 1px solid hsl(0, 0%, 65%);
     border-radius: 50px;
+
+
+
+}
+
+#page1-something h4:hover {
+    color: var(--primary-black);
+    transform: scaleX(1) scaleY(0.6) translateY(100%);
+    background-color: var(--primary-text-white);
+
 }
 
 #page1-something h4:nth-last-child(2) {
@@ -317,7 +349,7 @@ background-color:red;
     font-weight: 400;
 }
 
-.right-elem  img  {
+.right-elem img {
     height: 15vw;
     width: 15vw;
     object-fit: cover;
@@ -331,10 +363,11 @@ background-color:red;
     height: 100%;
     width: 100%;
     background-color: #111;
-  color: var(--primary-text-white);
+    color: var(--primary-text-white);
 }
-#page3  h1{
-  font-size: 50vw;
+
+#page3 h1 {
+    font-size: 50vw;
 }
 
 
@@ -394,12 +427,23 @@ background-color:red;
 }
 
 #page4 {
-    min-height: 100vh;
     width: 100%;
     background-color: var(--primary-black);
-    position: relative;
     color: var(--primary-text-white);
-    padding-bottom: 13vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.lastPage {
+    margin-top: 44vh;
+    height: 40vh;
+    position: relative;
+    width: 100%;
+    background-color: var(--primary-black);
+    color: var(--primary-text-white);
 }
 
 .section {
@@ -422,31 +466,36 @@ background-color:red;
 
 }
 
-.sec-left .skillslist>h4{
+.sec-left .skillslist>h4 {
     font-weight: 500;
     color: var(--primary-text-white);
 
     padding-top: 5px;
 }
-.sec-left .skillslist img{
+
+.sec-left .skillslist img {
     height: 2rem;
     width: 2rem;
 }
-.sec-left .skillslist .boxlist{
-align-items: center;
-justify-content: center;
-width: 100%;
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+
+.sec-left .skillslist .boxlist {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.sec-left .skillslist  .boxs{
+
+.sec-left .skillslist .boxs {
     border: 1px solid var(--primary-text-white);
     padding: 10px;
     margin: 10px;
 }
-.sec-left .skillslist  .boxs h3{
+
+.sec-left .skillslist .boxs h3 {
     font-size: 10px;
 }
+
 .sec-left h2 {
 
     font-size: 2.1vw;
@@ -454,7 +503,7 @@ width: 100%;
 }
 
 .sec-left p {
-    color:var(--primary-text-white);
+    color: var(--primary-text-white);
     margin-top: 10vh;
     font-size: 1.2vw;
     padding: 8px;
@@ -473,17 +522,11 @@ width: 100%;
     width: 100%;
     object-fit: cover;
 }
+.sec-right img:hover{
 
-.sec-right video {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity ease 0.1s;
 }
+
+
 
 #page5 {
     min-height: 100vh;
@@ -510,11 +553,11 @@ width: 100%;
     width: 70%;
 }
 
-#page5-right > p {
+#page5-right>p {
     font-size: 2.1vw;
 }
 
-#page5-right > p span {
+#page5-right>p span {
     /* background-color: red; */
     width: 15vw;
     display: inline-block;
@@ -639,7 +682,7 @@ summary::marker {
     padding: 10vh 10vw;
 }
 
-#page6 > h1 {
+#page6>h1 {
     font-size: 40vw;
     /* background-color: red; */
 
@@ -770,22 +813,28 @@ summary::marker {
     border-radius: 50%;
     margin-right: 1vw;
 }
-#btm6-part2 h4:nth-child(2){
+
+#btm6-part2 h4:nth-child(2) {
     transform: translateX(0);
 }
-#btm6-part2 h4:nth-child(3){
+
+#btm6-part2 h4:nth-child(3) {
     transform: translateX(10%);
 }
-#btm6-part2 h4:nth-child(4){
+
+#btm6-part2 h4:nth-child(4) {
     transform: translateX(20%);
 }
-#btm6-part2 h4:nth-child(5){
+
+#btm6-part2 h4:nth-child(5) {
     transform: translateX(30%);
 }
-#btm6-part2 h4:nth-child(6){
+
+#btm6-part2 h4:nth-child(6) {
     transform: translateX(40%);
 }
-#btm6-part2 h4:nth-child(7){
+
+#btm6-part2 h4:nth-child(7) {
     transform: translateX(50%);
 }
 
@@ -796,118 +845,189 @@ summary::marker {
 }
 
 
-footer{
+footer {
     padding: 2rem;
-    background-color:var(--primary-black);
+    position: relative;
+    background-color: var(--primary-black);
 }
-footer .footer-links{
+
+footer .footer-links {
     display: flex;
     align-items: end;
     justify-content: end;
     width: 100%;
+    gap: 4;
+
 }
+
+
 footer h4 svg {
     height: 1rem;
     width: 1rem;
 }
-footer h4{
+
+footer a {
     font-size: 1rem;
+    text-decoration: none;
+   padding-right: 0.6rem;
+}
+@media (max-width:600px) {
+    #page1 h1{
+        font-size: 10vw;
+        line-height: 10vh;
+    }
+    #page1 h1 svg{
+        font-size: 15rem;
+        
+    }
+    nav h1{
+        font-size: 0.7rem;
+    }
+    nav button{
+ font: 0.7rem;
+    }
+    .nav-part2 h4{
+        font-size: 0.7rem;
+    }
+    #moving-div .move img {
+        height: 5vw;
+        margin: 0 1.2vw;
+    }
+    #moving-div  {
+    width: 70%;
+    }
+    #page1 p{
+        font-size:2.4vw;
+        padding: 1rem;
+    }
+    #page1-something h4{
+        font-size: 0.7rem;
+    }
 }
 
-@media (max-width:600px) {
+@media (max-width:440px) {
     nav h1 {
         font-size: 2.6vw;
     }
+
     .nav-part2 h4 {
         font-size: 2.3vw;
     }
+
     nav button {
-    font-size: 1.2vw;
-    padding: 5px 5px;
+        font-size: 1.2vw;
+        padding: 5px 5px;
     }
-    #page1{
-        height:86vh;
+
+    #page1 {
+        height: 86vh;
     }
-    #page1 h1{
+
+    #page1 h1 {
         padding-left: 0.2rem;
         font-size: 12vw;
         line-height: 8vh;
     }
+
     #page1 p {
         font-size: 0.6rem;
         padding: 0.4rem;
     }
+
     #page1-something h4 {
-    font-weight: 400;
-    font-size: 2.1vw;
-    text-transform: lowercase;
-    margin-top: 0.5vw;
-    padding: 5px 8px;
-    border: 1px solid hsl(0, 0%, 65%);
+        font-weight: 400;
+        font-size: 2.1vw;
+        text-transform: lowercase;
+        margin-top: 0.5vw;
+        padding: 5px 8px;
+        border: 1px solid hsl(0, 0%, 65%);
     }
+
     #page1-something p {
         font-size: 5rem;
     }
-    #moving-div{
+
+    #moving-div {
         width: 72%;
     }
-    #moving-div .move img{
+
+    #moving-div .move img {
         height: 4vh;
     }
-    #page2{
-        height: 81vh;
+
+    #page2 {
+        height: 100vh;
     }
-    #page2{
+
+    #page2 {
         display: flex;
         flex-direction: column;
     }
-    #page2-left{
+
+    #page2-left {
         width: 100%;
+        height: 40%;
     }
+
     #page2-left p {
         font-size: 1.8vw;
     }
-    
+
     #page2-left h5 {
         width: 75%;
         font-weight: 400;
         font-size: 4.1vw;
     }
-    #page2-right{
+
+    #page2-right {
         width: 100%;
     }
+
     .right-elem {
         position: relative;
         /* background-color: red; */
-        padding-top: 5vw;
-        padding-bottom: 5vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
         border-bottom: 1px solid #333;
     }
-    
+
     .right-elem h2 {
         font-size: 2.4vw;
         font-weight: 500;
     }
-    
-    .right-elem  img  {
+
+    .right-elem img {
         height: 25vw;
         width: 25vw;
-        border-radius: 0%;
-        object-fit: cover;
-        opacity: 0;
-        position: absolute;
-        scale: 0;
+      
+
     }
-    #page4 .section{
+    .sec-left p{
+        margin-top: 0px;
+        font-size: 0.8rem;
+    }
+    #Page4{
+    }
+ 
+    #page4 .section {
         display: flex;
         flex-direction: column;
     }
-    .sec-left .skillslist .boxlist{
-        grid-template-columns: 1fr 1fr ;
+    .sec-left{
+        width: 100%;
     }
-    .sec-left .skillslist .boxs img{
+    .sec-left .skillslist .boxlist {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sec-left .skillslist .boxs img {
         height: 1rem;
         width: 1rem;
     }
-
+    .sec-right{
+        width: 100%;
+    }
+    .section{
+        padding: 1vh 1vw;
+    }
 }

@@ -162,18 +162,18 @@ function page3VideoAnimation() {
     })
 
 
-    var sections = document.querySelectorAll(".sec-right")
+    // var sections = document.querySelectorAll(".sec-right")
 
-    sections.forEach(function (elem) {
-        elem.addEventListener("mouseenter", function () {
-            elem.childNodes[3].style.opacity = 1
-            elem.childNodes[3].play()
-        })
-        elem.addEventListener("mouseleave", function () {
-            elem.childNodes[3].style.opacity = 0
-            elem.childNodes[3].load()
-        })
-    })
+    // sections.forEach(function (elem) {
+    //     elem.addEventListener("mouseenter", function () {
+    //         elem.childNodes[3].style.opacity = 1
+    //         elem.childNodes[3].play()
+    //     })
+    //     elem.addEventListener("mouseleave", function () {
+    //         elem.childNodes[3].style.opacity = 0
+    //         elem.childNodes[3].load()
+    //     })
+    // })
 
 }
 
@@ -248,7 +248,7 @@ function LinkedinIcon(){
     
     }
 GithubIcon()
-LinkedinIcon()
+// LinkedinIcon()
 window.addEventListener('mousemove', handleMouseMove)
 
 
@@ -262,9 +262,10 @@ const finalPath = `M 10 100 Q 500 100 1200 100`
 const guitarSvg = document.querySelector('#guitarSvg')
 
 guitarSvg.addEventListener('mousemove', (dets) => {
-    console.log(dets.y);
-
-    path = `M 10 100 Q 500 ${dets.y -250} 1200 100`
+    console.log(dets.y -317);
+    const innerWidth = window.innerWidth
+    
+    path = `M 10 100 Q ${dets.x} ${dets.y -240} ${innerWidth} 100`
 
     gsap.to('#guitarSvg>svg path', {
         attr: { d: path },
@@ -283,7 +284,48 @@ guitarSvg.addEventListener('mouseleave',(dets)=>{
 
 
 
+// const userName = document.querySelector('#name')
 
+
+// userName.addEventListener('mouseenter',()=>{
+//   userName.textContent = "Zaeem"
+//   gsap.to('#name',{
+//     y:20,
+//     duration:0.5
+
+//   })
+// })
+// userName.addEventListener('mouseleave',()=>{
+//     userName.textContent = "Rana"
+//     gsap.to('#name',{
+  
+//     })
+//   })
+
+
+
+const userImg = document.querySelector('#userImg')
+userImg.addEventListener('mousemove',(e)=>{
+    var x =e.x -500
+    var y = e.y -500
+})
+
+function textHoverAnimation(){
+
+
+
+   
+    const page1Text = document.querySelector('#page1 .heading')
+    console.log(page1Text);
+
+    gsap.to(page1Text,{
+      
+    })
+    
+
+}
+
+textHoverAnimation()
 
 
 
