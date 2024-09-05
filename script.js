@@ -218,6 +218,10 @@ Githubsvg.addEventListener('mouseenter', (e)=>{
 
 
 
+
+
+
+
 Githubsvg.addEventListener('mouseleave', (e)=>{
 
     gsap.to(targerEye,{
