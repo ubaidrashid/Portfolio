@@ -871,9 +871,9 @@ footer a {
     text-decoration: none;
    padding-right: 0.6rem;
 }
-@media (max-width:600px) {
+@media (min-width: 500px) and (max-width: 786px) {
     #page1 h1{
-        font-size: 10vw;
+        font-size: 12vw;
         line-height: 10vh;
     }
     #page1 h1 svg{
@@ -903,6 +903,78 @@ footer a {
     #page1-something h4{
         font-size: 0.7rem;
     }
+    
+    #page2 {
+        height: 100vh;
+    }
+
+    #page2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page2-left {
+        width: 100%;
+        height: 40%;
+    }
+
+    #page2-left p {
+        font-size: 1.8vw;
+    }
+
+    #page2-left h5 {
+        width: 75%;
+        font-weight: 400;
+        font-size: 4.1vw;
+    }
+
+    #page2-right {
+        width: 100%;
+    }
+    .right-elem {
+        position: relative;
+        /* background-color: red; */
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        border-bottom: 1px solid #333;
+    }
+
+    .right-elem h2 {
+        font-size: 2.4vw;
+        font-weight: 500;
+    }
+
+    .right-elem img {
+        height: 25vw;
+        width: 25vw;
+      
+
+    }
+    
+    #page4 .section {
+        display: flex;
+        flex-direction: column;
+    }
+    .sec-left{
+        width: 100%;
+    }
+    .sec-left .skillslist .boxlist {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sec-right{
+        width: 100%;
+    }
+    .section{
+        padding: 1vh 1vw;
+    }
+    #page4{
+        padding-top: 41vh;
+    } 
+}
+@media (max-width:500) {
+    #page4{
+        padding-top: 21vh;
+    }   
 }
 
 @media (max-width:440px) {
@@ -1007,6 +1079,7 @@ footer a {
         font-size: 0.8rem;
     }
     #Page4{
+        padding-top: 1vh;
     }
  
     #page4 .section {
