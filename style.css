@@ -7,8 +7,8 @@
 }
 
 :root {
-    --primary-black: #111;
-    --primary-text-white: white;
+    --primary-black: #050505;
+    --primary-text-white: rgb(255, 255, 255);
 
 }
 
@@ -34,7 +34,7 @@ body {
     /* justify-center */
     text-align: center;
     /* text-center */
-    background-color: white;
+    background-color: var(--primary-text-white);
     /* bg-white */
     z-index: 9;
     /* z-10 */
@@ -42,7 +42,7 @@ body {
     /* fixed */
     border-radius: 9999px;
     /* rounded-full */
-    box-shadow: 0 0 100px 15px rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 100px 15px var(--primary-text-white);
 }
 
 .overlay {
@@ -62,12 +62,14 @@ nav {
     width: 100%;
     padding: 2vw 2.4vw;
     justify-content: space-between;
-    background-color: #111;
+    background-color: var(--primary-black);
     z-index: 10;
 }
 
 nav h1 {
     font-size: 1.6vw;
+    color: var(--primary-text-white);
+
 }
 
 #nav_part1 {
@@ -76,7 +78,9 @@ nav h1 {
     justify-content: space-between;
     align-items: center;
 }
-
+#nav_part1 a{
+text-decoration: none;
+}
 
 #nav_part1 h4 a {
     text-decoration: none;
@@ -86,10 +90,14 @@ nav h1 {
     align-items: center;
     justify-content: center;
     gap: 4px;
+    color: var(--primary-text-white);
+
 }
 
 #nav_part1 h4 svg {
     height: 1.03rem;
+    color: var(--primary-text-white);
+
     width: 1.03rem;
 }
 
@@ -123,7 +131,7 @@ nav h1 {
     display: inline-block;
 }
 
-nav button {
+nav #mail {
     background-color: #0BA34E;
     display: flex;
     align-items: center;
@@ -135,7 +143,7 @@ nav button {
     border: none;
 }
 
-nav button svg {
+nav #mail svg {
     height: 0.8vw;
     margin-left: 1.6vw;
 }
@@ -156,7 +164,7 @@ nav button svg {
     position: absolute;
     /* background-color: red; */
     top: 100%;
-    background-color: #111;
+    background-color: var(--primary-black);
     z-index: 9;
     border-bottom: 1px solid #FFFFFF;
 }
@@ -167,12 +175,13 @@ nav button svg {
 #page1 {
     height: 100vh;
     width: 100%;
-    background-color: #111;
+    background-color: var(--primary-black);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    color: var(--primary-text-white) !important;
 }
 
 #page1 h1 {
@@ -180,6 +189,7 @@ nav button svg {
     text-transform: uppercase;
     font-weight: 900;
     line-height: 8.5vw;
+    color: var(--primary-text-white);
 }
 
 #page1 h1 svg {
@@ -191,6 +201,8 @@ nav button svg {
 }
 
 #page1 p {
+    color: var(--primary-text-white);
+
     text-align: center;
     font-weight: 400;
     margin-top: 3vh;
@@ -209,6 +221,8 @@ nav button svg {
     font-size: 1vw;
     text-transform: lowercase;
     margin-top: 0.5vw;
+    color: var(--primary-text-white);
+
     padding: 9px 18px;
 
     border: 1px solid hsl(0, 0%, 65%);
@@ -270,7 +284,7 @@ nav button svg {
 #blur-left {
     height: 100%;
     width: 20%;
-    background: linear-gradient(to right, #111, transparent);
+    background: linear-gradient(to right, var(--primary-black), transparent);
 
     position: absolute;
     top: 0;
@@ -281,7 +295,7 @@ nav button svg {
 #blur-right {
     height: 100%;
     width: 20%;
-    background: linear-gradient(to right, transparent, #111);
+    background: linear-gradient(to right, transparent, var(--primary-black));
     position: absolute;
     top: 0;
     right: 0;
@@ -297,7 +311,7 @@ nav button svg {
     height: 100vh;
     position: relative;
     width: 100%;
-    background-color: #111;
+    background-color: var(--primary-black);
     position: relative;
     padding: 0vw 10.5vw;
     padding-bottom: 8vw;
@@ -320,12 +334,16 @@ nav button svg {
 }
 
 #page2-left p {
+    color: var(--primary-text-white);
+
     font-size: 0.8vw;
 }
 
 #page2-left h5 {
     width: 75%;
     font-weight: 400;
+    color: var(--primary-text-white);
+
     font-size: 1.1vw;
 }
 
@@ -334,6 +352,8 @@ nav button svg {
     height: 100%;
     width: 50%;
     /* background-color: #333; */
+    color: var(--primary-text-white);
+
 }
 
 .right-elem {
@@ -347,6 +367,8 @@ nav button svg {
 .right-elem h2 {
     font-size: 1.4vw;
     font-weight: 400;
+    color: var(--primary-text-white);
+
 }
 
 .right-elem img {
@@ -362,7 +384,7 @@ nav button svg {
 #page3 {
     height: 100%;
     width: 100%;
-    background-color: #111;
+    background-color: var(--primary-black);
     color: var(--primary-text-white);
 }
 
@@ -390,7 +412,7 @@ nav button svg {
 }
 
 .page3-center .icon i {
-    color: #000;
+    color:var(--primary-black);
     font-size: 2.8vw;
 
 }
@@ -398,7 +420,7 @@ nav button svg {
 .page3-center h5 {
     font-size: 0.8vw;
     background-color: #fff;
-    color: #000;
+    color:var(--primary-black);
     border-radius: 50px;
     padding: 12px 26px 10px 26px;
     margin-top: 0.5vw;
@@ -462,7 +484,7 @@ nav button svg {
     padding-top: 3vh;
     color: var(--primary-text-white);
     /* background-color: aqua; */
-    border-top: 2px solid #000;
+    border-top: 2px solidvar(--primary-black);
 
 }
 
@@ -486,14 +508,19 @@ nav button svg {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+
 .sec-left .skillslist .boxs {
     border: 1px solid var(--primary-text-white);
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin: 10px;
 }
 
 .sec-left .skillslist .boxs h3 {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .sec-left h2 {
@@ -530,7 +557,7 @@ nav button svg {
 
 #page5 {
     min-height: 100vh;
-    background-color: #111;
+    background-color: var(--primary-black);
     width: 100%;
     padding: 5vh 10.5vw;
     display: flex;
@@ -739,7 +766,7 @@ summary::marker {
     align-items: flex-start;
     justify-content: center;
     /* background-color: rgb(48, 48, 48); */
-    /* color: #000; */
+    /* color:var(--primary-black); */
 }
 
 #btm6-part1 {
@@ -782,7 +809,7 @@ summary::marker {
 }
 
 .btm6-parts h5 {
-    color: #000;
+    color:var(--primary-black);
     font-weight: 500;
     font-size: 0.9vw;
     margin-bottom: 4vh;
@@ -841,7 +868,7 @@ summary::marker {
 
 #page7 {
     height: 100vh;
-    background-color: #111;
+    background-color: var(--primary-black);
 }
 
 
@@ -859,10 +886,15 @@ footer .footer-links {
     gap: 4;
 
 }
-
+footer h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 footer h4 svg {
     height: 1rem;
+    margin-left: 6px;
     width: 1rem;
 }
 
@@ -875,6 +907,8 @@ footer a {
     #page1 h1{
         font-size: 12vw;
         line-height: 10vh;
+    color: var(--primary-text-white);
+
     }
     #page1 h1 svg{
         font-size: 15rem;
@@ -882,11 +916,15 @@ footer a {
     }
     nav h1{
         font-size: 0.7rem;
+    color: var(--primary-text-white);
+
     }
     nav button{
  font: 0.7rem;
     }
     .nav-part2 h4{
+    color: var(--primary-text-white);
+
         font-size: 0.7rem;
     }
     #moving-div .move img {
@@ -899,6 +937,8 @@ footer a {
     #page1 p{
         font-size:2.4vw;
         padding: 1rem;
+    color: var(--primary-text-white);
+
     }
     #page1-something h4{
         font-size: 0.7rem;
@@ -978,8 +1018,10 @@ footer a {
 }
 
 @media (max-width:440px) {
+ 
     nav h1 {
         font-size: 2.6vw;
+        
     }
 
     .nav-part2 h4 {
@@ -1103,4 +1145,93 @@ footer a {
     .section{
         padding: 1vh 1vw;
     }
+}
+
+
+/*                                                   Project page */
+
+@media (max-width:440px) {
+    .projectlist{
+  
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        padding: 0  !important;
+
+    }   
+    .projectlist .item {
+        width: 95% !important;
+        margin: 0.5rem !important;
+
+    } 
+
+}
+@media (min-width:440px) and (max-width:770px) {
+    .projectlist{
+  
+        grid-template-columns: 1fr 1fr !important;
+        width: 100%;
+        padding: 0;
+
+    }   
+    .projectlist .item {
+        width: 95% !important;
+  gap: 10px;
+  margin: 0.2rem;
+    } 
+
+}
+#project{
+    height: 100%;
+    width: 100%;
+}
+.projectlist{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.projectlist .item {
+    width: 80%;
+    border: 1px solid rgb(119, 118, 118);
+    margin: 1rem;
+    padding: 0.8rem;
+}
+.projectlist .item h2{
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+.projectlist .item p{
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    height: auto;
+    overflow: hidden;
+
+}
+.projectlist img {
+    width: 100%;
+    height: 30vh;
+    object-fit:cover;
+}
+.technology h3{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.technology h2{
+font-size: 2px;
+    font-weight: 500;
+    color: #c1c1c1;
+}
+
+.technology  {
+display: flex;
+align-items: start;
+justify-content: center;
+flex-direction: column;
+}
+.technology .tech{
+    padding-left: 0.7rem;
+ text-align: center;
+ 
 }

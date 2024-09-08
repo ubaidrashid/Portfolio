@@ -216,7 +216,11 @@ Githubsvg.addEventListener('mouseenter', (e)=>{
 
 
 
+// const theme  = document.querySelector('#theme')
 
+// theme.addEventListener('click',()=>{
+    
+// })
 
 
 
@@ -334,7 +338,7 @@ function textHoverAnimation(){
 
 }
 
-textHoverAnimation()
+// textHoverAnimation()
 
 
 
