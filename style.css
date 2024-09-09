@@ -1193,6 +1193,7 @@ footer a {
     padding: 1rem;
 }
 .projectlist .item {
+    background-color: #282828;
     width: 80%;
     border: 1px solid rgb(119, 118, 118);
     margin: 1rem;
@@ -1202,17 +1203,38 @@ footer a {
     font-size: 0.9rem;
     padding: 0.2rem;
 }
-.projectlist .item p{
+.projectlist .item .title{
+    font-size: 1rem;
+    padding: 0.5rem;
+   height: 2rem;
+    overflow: hidden;   
+}
+
+
+.projectlist .item p {
     font-size: 0.7rem;
     padding: 0.5rem;
-    height: auto;
+    height: 2rem;
     overflow: hidden;
-
+    transition:  0.3s ease-in-out; /* Added a transition for the height */
 }
+
+.projectlist .item p a {
+    color: #4f5bff;
+}
+
+.projectlist .item p:hover {
+    height: auto; 
+    transition-delay: 0.1s; /* A slight delay for smoother effect */
+}
+
 .projectlist img {
     width: 100%;
     height: 30vh;
     object-fit:cover;
+}
+.projectlist a{
+    text-decoration: none;
 }
 .technology h3{
     font-size: 0.9rem;
@@ -1234,4 +1256,11 @@ flex-direction: column;
     padding-left: 0.7rem;
  text-align: center;
  
+}
+
+.technology .tech button{
+    font-size:12px;
+    border-radius: 20px;
+    padding: 4px;
+    color: var(--primary-black);
 }
