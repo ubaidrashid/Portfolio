@@ -482,6 +482,7 @@ nav #mail svg {
     height: 100%;
     width: 60%;
     padding-top: 3vh;
+    padding-right: 2rem;
     color: var(--primary-text-white);
     /* background-color: aqua; */
     border-top: 2px solidvar(--primary-black);
@@ -516,7 +517,11 @@ nav #mail svg {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 10px;
+    margin: 7px;
+}
+.sec-left .skillslist .boxs:hover{
+    box-shadow: 0px 0px 20px -8px var(--primary-text-white);
+
 }
 
 .sec-left .skillslist .boxs h3 {
@@ -903,7 +908,7 @@ footer a {
     text-decoration: none;
    padding-right: 0.6rem;
 }
-@media (min-width: 500px) and (max-width: 786px) {
+@media (min-width: 440px) and (max-width: 786px) {
     #page1 h1{
         font-size: 12vw;
         line-height: 10vh;
@@ -1006,6 +1011,7 @@ footer a {
     }
     .section{
         padding: 1vh 1vw;
+        height: 122vh;
     }
     #page4{
         padding-top: 41vh;
@@ -1130,11 +1136,21 @@ footer a {
     }
     .sec-left{
         width: 100%;
+        padding-right: 0rem;
     }
     .sec-left .skillslist .boxlist {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    .sec-left .skillslist .boxs{
+        padding: 3px;
+        gap: 5px;
+    }
+    .sec-left h2{
+        font-size: 2rem;
+    }
+    .sec-left .skillslist .boxs h3{
+        font-size: 9px;
+    }
     .sec-left .skillslist .boxs img {
         height: 1rem;
         width: 1rem;
@@ -1193,11 +1209,16 @@ footer a {
     padding: 1rem;
 }
 .projectlist .item {
-    background-color: #282828;
+    background-color: #212020;
+    border-radius: 4%;
     width: 80%;
     border: 1px solid rgb(119, 118, 118);
     margin: 1rem;
     padding: 0.8rem;
+    transition: 0.4s;
+}
+.projectlist .item:hover{
+    box-shadow: 0px 0px 20px -8px var(--primary-text-white);
 }
 .projectlist .item h2{
     font-size: 0.9rem;
@@ -1216,7 +1237,7 @@ footer a {
     padding: 0.5rem;
     height: 2rem;
     overflow: hidden;
-    transition:  0.3s ease-in-out; /* Added a transition for the height */
+    transition:  1s; /* Added a transition for the height */
 }
 
 .projectlist .item p a {
@@ -1263,4 +1284,5 @@ flex-direction: column;
     border-radius: 20px;
     padding: 4px;
     color: var(--primary-black);
+    background-color: #efefef;
 }
