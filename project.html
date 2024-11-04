@@ -1,155 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" target="_blank" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" target="_blank" href="./style.css">
 </head>
+
 <body>
   <div
     className="h-7  flex items-center justify-center text-center w-7 bg-white z-10 fixed rounded-full shadow-[0_0_100px_15px_rgba(255,255,255,0.5)]"
     id="cursor"></div>
-    <nav>
-      <div class="" id="nav_part1">
-        <div class="">
-          <h1 id="name"><a href="index.html">
-            ZAEEM
+  <nav>
+    <div class="" id="nav_part1">
+      <div class="">
+        <h1 id="name"><a href="index.html">
+          Oss Portfolio
           </a></h1>
-        </div>
-        <div class="nav-part2">
-          <h4>
-            <a href="project.html">
-              Projects
-              <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
-                xml:space="preserve">
-                <g id="SVGRepo_bgCarrier" stroke-width="0" />
-  
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-  
-                <g id="SVGRepo_iconCarrier">
-                  <g>
-                    <g>
-                      <path
-                        d="M189.228,166.95h-16.696v16.696c0,27.62,22.468,50.088,50.088,50.088h16.696v-16.696 C239.316,189.419,216.848,166.95,189.228,166.95z" />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path
-                        d="M373.536,42.508C266.754-46.472,99.182,11.12,75.128,151.303c-11.522,67.208,13.001,132.665,65.588,175.096 c20.218,16.315,31.816,41.365,31.816,68.729v33.392c0,27.62,22.468,50.088,50.088,50.088h16.696v16.696 c0,9.223,7.478,16.696,16.696,16.696c9.217,0,16.696-7.473,16.696-16.696v-16.696h16.696c27.62,0,50.088-22.468,50.088-50.088 v-33.392v-0.006c0-0.002,0-0.003,0-0.003c0-27.296,11.685-52.416,32.055-68.916c43.294-35.038,68.121-87.001,68.121-142.557 C439.668,128.983,415.559,77.541,373.536,42.508z M306.1,428.52c0,9.206-7.49,16.696-16.696,16.696H222.62 c-9.206,0-16.696-7.49-16.696-16.696v-16.696H306.1V428.52z M372.884,183.646c0,46.033-37.447,83.48-83.48,83.48h-16.696v111.306 h-33.392V267.126H222.62c-46.034,0-83.48-37.447-83.48-83.48v-33.392c0-9.223,7.479-16.696,16.696-16.696h33.392 c27.323,0,51.546,13.252,66.784,33.602c15.238-20.351,39.46-33.602,66.784-33.602h33.392c9.217,0,16.696,7.473,16.696,16.696 V183.646z" />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path
-                        d="M322.796,166.95c-27.62,0-50.088,22.468-50.088,50.088v16.696h16.696c27.62,0,50.088-22.468,50.088-50.088V166.95H322.796 z" />
-                    </g>
-                  </g>
-                </g>
-              </svg>
-  
-            </a>
-          </h4>
-          <h4 id="github">
-            <a href="https://github.com/RanaZaeem0">Github
-              <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="-267 288.9 264.5 225.1" xml:space="preserve">
-                <g id="SVGRepo_bgCarrier" stroke-width="0" />
-  
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-  
-                <g id="SVGRepo_iconCarrier">
+      </div>
+      <div class="nav-part2">
+        <h4>
+          <a href="project.html">
+            Projects
+            <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+              xml:space="preserve">
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+              <g id="SVGRepo_iconCarrier">
+                <g>
                   <g>
                     <path
-                      d="M-21.8,354.4c-0.8-0.9-1.3-2.3-1.2-3.5c0.9-20.1-1.8-39.6-8.6-58.6c-0.9-2.4-2-3.3-4.5-2.6c-5.6,1.7-11.4,3-16.9,5 c-15.2,5.5-29.1,13.5-42.6,22.2c-1.4,0.9-3.5,1.5-5.2,1.2c-22.1-3.9-44.3-3.7-66.5-0.3c-2.2,0.3-5-0.2-6.8-1.3 c-15.7-10.2-31.7-20.2-50-25c-15.1-4-12-4.8-16.3,8.9c-5.1,16.4-7.1,33.4-6,50.6c0.1,1.2-0.8,2.7-1.6,3.8 c-6.6,7.9-11.7,16.6-14.8,26.4c-6,19-4.8,38.2-1,57.3c7.5,37.5,32.8,63.8,70.2,70.3c19.3,3.4,39.2,3.7,57.3,5.2 c20.2-1.5,38.9-1.6,57.1-4.5c31.8-5.1,55.8-22,67.8-52.7c4.2-10.7,6.5-22.4,7.9-33.8C-0.3,397.9-4.6,374.3-21.8,354.4z M-39.5,458.8c-3.3,15.6-12.4,26.3-27.6,31.8c-14.7,5.4-29.9,7.6-45.4,8.6c-7.5,0.5-15,0.1-22.5,0.1c-20.2,0.4-40.4-0.4-59.9-6.2 c-24.5-7.3-35.5-21.9-36.2-47.5c-0.3-9.1,0.7-17.9,5-26.1c8.5-16.5,23.2-22.3,40.6-22.6c9.5-0.1,19.1,0.7,28.7,1.6 c20.1,1.8,40-0.1,60-1.2c8.8-0.5,17.8-0.7,26.4,0.8c18.5,3.2,32.5,21.6,32.8,42.3C-37.6,446.5-38.3,452.8-39.5,458.8z" />
-                    <path
-                      d="M-191.5,424.5c-5.5,5.7-7.4,12.9-7.7,19.3c0,9.6,2.8,17.3,7.7,22.3c6.8,6.9,16.1,6.7,22.6-0.3c9.8-10.6,9.7-30.5,0-41 C-175.4,417.7-184.9,417.6-191.5,424.5z" />
-                    <path class="targerEye"
-                      d="M-99.4,423.7c-11.2,10.3-11.2,33,0,43.2c6.5,5.9,15.3,5.6,21.4-0.7c5.6-5.8,7.6-13.1,7.8-21c-0.2-7.9-2.2-15.1-7.9-20.9 C-84.2,418-93,417.8-99.4,423.7z" />
+                      d="M189.228,166.95h-16.696v16.696c0,27.62,22.468,50.088,50.088,50.088h16.696v-16.696 C239.316,189.419,216.848,166.95,189.228,166.95z" />
                   </g>
                 </g>
-              </svg></a>
-          </h4>
-          <h4 id="linkedin">
-            <a target="_blank" href="https://www.linkedin.com/in/rana-zaeem-765a31255/">
-              Linkedin
-              <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512"
-                xml:space="preserve">
-                <g id="SVGRepo_bgCarrier" stroke-width="0" />
-  
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-  
-                <g id="SVGRepo_iconCarrier">
-                  <path class="lindekinPath"
-                    d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z " />
+                <g>
+                  <g>
+                    <path
+                      d="M373.536,42.508C266.754-46.472,99.182,11.12,75.128,151.303c-11.522,67.208,13.001,132.665,65.588,175.096 c20.218,16.315,31.816,41.365,31.816,68.729v33.392c0,27.62,22.468,50.088,50.088,50.088h16.696v16.696 c0,9.223,7.478,16.696,16.696,16.696c9.217,0,16.696-7.473,16.696-16.696v-16.696h16.696c27.62,0,50.088-22.468,50.088-50.088 v-33.392v-0.006c0-0.002,0-0.003,0-0.003c0-27.296,11.685-52.416,32.055-68.916c43.294-35.038,68.121-87.001,68.121-142.557 C439.668,128.983,415.559,77.541,373.536,42.508z M306.1,428.52c0,9.206-7.49,16.696-16.696,16.696H222.62 c-9.206,0-16.696-7.49-16.696-16.696v-16.696H306.1V428.52z M372.884,183.646c0,46.033-37.447,83.48-83.48,83.48h-16.696v111.306 h-33.392V267.126H222.62c-46.034,0-83.48-37.447-83.48-83.48v-33.392c0-9.223,7.479-16.696,16.696-16.696h33.392 c27.323,0,51.546,13.252,66.784,33.602c15.238-20.351,39.46-33.602,66.784-33.602h33.392c9.217,0,16.696,7.473,16.696,16.696 V183.646z" />
+                  </g>
                 </g>
-              </svg>
-            </a>
-          </h4>
-        </div>
-        <div class="">
-          <!-- <button id="theme">dark</button> -->
-          <a href="mailto:ranazaeem34@gmail.com">
-            <button id="mail">
-              Let's Talk
-              <svg fill="none" viewBox="0 0 20 20">
-                <path fill="#fff"
-                  d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z">
-                </path>
-              </svg>
-            </button>
+                <g>
+                  <g>
+                    <path
+                      d="M322.796,166.95c-27.62,0-50.088,22.468-50.088,50.088v16.696h16.696c27.62,0,50.088-22.468,50.088-50.088V166.95H322.796 z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+
+          </a>
+        </h4>
+        <h4 id="github">
+          <a href="https://github.com/ubaidrashid">Github
+            <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="-267 288.9 264.5 225.1" xml:space="preserve">
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M-21.8,354.4c-0.8-0.9-1.3-2.3-1.2-3.5c0.9-20.1-1.8-39.6-8.6-58.6c-0.9-2.4-2-3.3-4.5-2.6c-5.6,1.7-11.4,3-16.9,5 c-15.2,5.5-29.1,13.5-42.6,22.2c-1.4,0.9-3.5,1.5-5.2,1.2c-22.1-3.9-44.3-3.7-66.5-0.3c-2.2,0.3-5-0.2-6.8-1.3 c-15.7-10.2-31.7-20.2-50-25c-15.1-4-12-4.8-16.3,8.9c-5.1,16.4-7.1,33.4-6,50.6c0.1,1.2-0.8,2.7-1.6,3.8 c-6.6,7.9-11.7,16.6-14.8,26.4c-6,19-4.8,38.2-1,57.3c7.5,37.5,32.8,63.8,70.2,70.3c19.3,3.4,39.2,3.7,57.3,5.2 c20.2-1.5,38.9-1.6,57.1-4.5c31.8-5.1,55.8-22,67.8-52.7c4.2-10.7,6.5-22.4,7.9-33.8C-0.3,397.9-4.6,374.3-21.8,354.4z M-39.5,458.8c-3.3,15.6-12.4,26.3-27.6,31.8c-14.7,5.4-29.9,7.6-45.4,8.6c-7.5,0.5-15,0.1-22.5,0.1c-20.2,0.4-40.4-0.4-59.9-6.2 c-24.5-7.3-35.5-21.9-36.2-47.5c-0.3-9.1,0.7-17.9,5-26.1c8.5-16.5,23.2-22.3,40.6-22.6c9.5-0.1,19.1,0.7,28.7,1.6 c20.1,1.8,40-0.1,60-1.2c8.8-0.5,17.8-0.7,26.4,0.8c18.5,3.2,32.5,21.6,32.8,42.3C-37.6,446.5-38.3,452.8-39.5,458.8z" />
+                  <path
+                    d="M-191.5,424.5c-5.5,5.7-7.4,12.9-7.7,19.3c0,9.6,2.8,17.3,7.7,22.3c6.8,6.9,16.1,6.7,22.6-0.3c9.8-10.6,9.7-30.5,0-41 C-175.4,417.7-184.9,417.6-191.5,424.5z" />
+                  <path class="targerEye"
+                    d="M-99.4,423.7c-11.2,10.3-11.2,33,0,43.2c6.5,5.9,15.3,5.6,21.4-0.7c5.6-5.8,7.6-13.1,7.8-21c-0.2-7.9-2.2-15.1-7.9-20.9 C-84.2,418-93,417.8-99.4,423.7z" />
+                </g>
+              </g>
+            </svg></a>
+        </h4>
+        <h4 id="linkedin">
+          <a target="_blank" href="https://www.linkedin.com/in/rana-zaeem-765a31255/">
+            Linkedin
+            <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512"
+              xml:space="preserve">
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+              <g id="SVGRepo_iconCarrier">
+                <path class="lindekinPath"
+                  d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z " />
+              </g>
+            </svg>
+          </a>
+        </h4>
+      </div>
+      <div class="">
+        <!-- <button id="theme">dark</button> -->
+        <a href="mailto:ubaidqadri97@gmail.com">
+          <button id="mail">
+            Let's Talk
+            <svg fill="none" viewBox="0 0 20 20">
+              <path fill="#fff"
+                d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z">
+              </path>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="main">
+    <div id="project">
+      <div class="projectlist">
+        
+
+        <div class="item">
+          <a target="_blank" href="https://workhaven.netlify.app/">
+
+            <img src="./img/staticjoblisting.jpg" alt="">
+            <h2 class="title">Static Job Listing With Filteration</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>JAVASCRIPT</button>
+                  <button>Css</button>
+                 </h3>
+
+              </div>
+            </div>
           </a>
         </div>
-      </div>
-    </nav>
+        <div class="item">
+          <a target="_blank" href="https://tesla-by-oss.netlify.app/">
 
+            <img src="./img/Tesla.png" alt="">
+            <h2 class="title">Tesla Clone</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>ReactJs</button>
+                  <button>Jsx</button>
+                 </h3>
 
-    <div id="main">
-        <div id="project">
-            <div class="projectlist">
-                <div class="item">
-              <a target="_blank" href="https://youtube-fronend.vercel.app/">
-
-                  <img src="./img/youtube-homepage-redesign-ipad-1.webp" alt="">
-                  <h2 class="title">I have the entire Youtube website with allmost all features </h2>
-                  <div class="technology">
-                  <h2>Technology :</h2>
-                  <div class="tech">
-                      <h3><button>MongoDB</button><button>Express.js</button> <button>Node.js</button><button>React.js</button> ,<button>Typescript</button> <button>Docker</button> <button>CI/CD</button><button>Tailwindcss</button> </h3>
-                    
-                  </div>
-                  </div>
-                  </a>
-                  <P>
-                      This project have all the feature Subscribe,videoUpload,commnet,playlist,tweet,like etc .
-                      I have build CI/CD pipelines to create docker image on DockerHub. Here is the github link where u can read all aout the project
-                  <a href="https://github.com/RanaZaeem0/youtube-fronend/blob/main/README.md">More Details</a>    
-                  </P>
               </div>
-            
-                  <div class="item">
-                <a target="_blank" href="https://inno-frontend.vercel.app/">
+            </div>
+          </a>
+        </div>
 
-                    <img src="./img/m1.PNG" alt="">
-                    <h2 class="title">This is a Pern Stack Bloging Website</h2>
-                    <div class="technology">
-                        <h2>Technology :</h2>
-                        <div class="tech">
-                          <h3><button>PostgresSQL</button><button>Express.js</button> <button>Node.js</button><button>React.js</button> ,<button>Typescript</button> <button>Docker</button> <button>CI/CD</button><button>Tailwindcss</button> </h3>
-                          
-                        </div>
-                        </div>
-                      </a>
-                    <P>
-                     This is a Bloging website it is same as Medium . Here u can create blog nad read blog and login/signup
-                    </P>
-                </div>
-               
-                <a target="_blank" href="https://pay-lime-two.vercel.app/signup">
+        <div class="item">
+          <a target="_blank" href="https://atomic-blog-by-oss-coding.netlify.app/">
+
+            <img src="./img/atomic-blog.png" alt="">
+            <h2 class="title">Comments Posting Project</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>ReactJs</button>
+                  <button>Jsx</button>
+                  <button>Api</button>
+                  <button>Context Api</button>
+                 </h3>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://usepopcorn-by-oss-coding.netlify.app/">
+
+            <img src="./img/usepopcorn.png" alt="">
+            <h2 class="title">Movies Searching Project</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>ReactJs</button>
+                  <button>Jsx</button>
+                  <button>Api</button>
+                 </h3>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://country-info-central.netlify.app">
+
+            <img src="./img/rest-country.jpg" alt="">
+            <h2 class="title">All Coutries Data</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3><button>JAVASCRIPT</button><button>CSS</button><button>API</button>
+                </h3>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://celestianexus.netlify.app">
+
+            <img src="./img/celestia-nexus.png" alt="">
+            <h2 class="title">Space Planets Details Project</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3><button>CSS</button><button>JAVASCRIPT</button> </h3>
+
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a target="_blank" href="https://kickkraze.netlify.app">
+
+            <img src="./img/shoes-web.jpg" alt="">
+            <h2 class="title">Ecommerce Product page</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3><button>CSS</button><button>JAVASCRIPT</button> </h3>
+
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a target="_blank" href="https://bookmarks-cycle.netlify.app">
+
+            <img src="./img/bookmark-landing.jpg" alt="">
+            <h2 class="title">BookMark Landing</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3><button>CSS</button><button>JAVASCRIPT</button> </h3>
+
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a target="_blank" href="https://forkify-pros.netlify.app">
+            <img src="./img/forkify.png" alt="">
+            <h2 class="title">Forkify Clone</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3><button>CSS</button><button>JAVASCRIPT</button><button>API</button> </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://css-illusion.netlify.app">
+            <img src="./img/css-illusion.jpg" alt="">
+            <h2 class="title">Css Illusion</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3><button>CSS Master</button> </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://triplist-oss.netlify.app">
+            <img src="./img/farawa.png" alt="">
+            <h2 class="title">Far Away for Trip Packing</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>React</button>
+                  <button>JSX</button>
+                  <button>CSS</button>
+                  <button>Js</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://cardiess.netlify.app">
+            <img src="./img/interactive-card.jpg" alt="">
+            <h2 class="title">Interactive Card Detail</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>CSS</button>
+                  <button>Js</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://spanset.netlify.app">
+            <img src="./img/intro.jpg" alt="">
+            <h2 class="title">Intro Section</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>CSS</button>
+                  <button>Js</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://arcadefusion.netlify.app">
+            <img src="./img/multi-step-form.jpg" alt="">
+            <h2 class="title">Multi Step Form</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>CSS</button>
+                  <button>Js Master</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://sweets-temptations.netlify.app">
+            <img src="./img/resturant.jpg" alt="">
+            <h2 class="title">Resturnt Project</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>CSS</button>
+                  <button>Js Master</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://slither-saga.netlify.app">
+            <img src="./img/snake-game.png" alt="">
+            <h2 class="title">Snake Game</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>CSS</button>
+                  <button>Js Master</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://oss-todo.netlify.app">
+            <img src="./img/todo-mentor.jpg" alt="">
+            <h2 class="title">Advanced Level Todo List</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>CSS</button>
+                  <button>Js Master</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://furnitessclassi.netlify.app">
+            <img src="./img/room-furnite.jpg" alt="">
+            <h2 class="title">Room Furnites</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>CSS</button>
+                  <button>Js Master</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a target="_blank" href="https://project-pulsee.netlify.app">
+            <img src="./img/project-tracking.jpg" alt="">
+            <h2 class="title">Project Tracking Landing Page</h2>
+            <div class="technology">
+              <h2>Technology :</h2>
+              <div class="tech">
+                <h3>
+                  <button>CSS</button>
+                  <button>Js Master</button>
+                 </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- <a target="_blank" href="https://pay-lime-two.vercel.app/signup">
                   <div class="item">
                     <img src="./img/easypiasa.PNG" alt="">
                     <h2 class="title">It is a simple easypiasa website<h2>
@@ -213,89 +473,90 @@
                     </P>
                 </div>
                 </a>
-                
-             
-            </div>
-        </div>
-        <footer>
-          <h2>Let Connect !</h2>
-          <div class="">
-            <div class="footer-links">
-              <a href="https://x.com/ranazaeem34/" target="_blank">
-                <h4>
-                  Twitter
-                  <svg fill="white" version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve">
-                    <g id="Layer_10">
-                    </g>
-                    <g id="win10">
-                    </g>
-                    <g id="ssm">
-                    </g>
-                    <g id="mat_2">
-                    </g>
-                    <g id="ios">
-                    </g>
-                    <g id="fluent">
-                      <polygon points="21.26,26.59 22.66,28.64 9.41,44 6.23,44 	" />
-                      <polygon points="42.2,6 28.01,22.45 26.6,20.4 39.03,6 	" />
-                      <path d="M16.881,8l23.322,34H33.04L9.717,8H16.881 M17.934,6H5.92l26.066,38H44L17.934,6L17.934,6z" />
-                    </g>
-                  </svg>
-                </h4>
-              </a>
-              <a href="https://github.com/RanaZaeem0">
-                <h4 id="github">
-                  Gituhb
-                  <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="-267 288.9 264.5 225.1" xml:space="preserve">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-    
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-    
-                    <g id="SVGRepo_iconCarrier">
-                      <g>
-                        <path
-                          d="M-21.8,354.4c-0.8-0.9-1.3-2.3-1.2-3.5c0.9-20.1-1.8-39.6-8.6-58.6c-0.9-2.4-2-3.3-4.5-2.6c-5.6,1.7-11.4,3-16.9,5 c-15.2,5.5-29.1,13.5-42.6,22.2c-1.4,0.9-3.5,1.5-5.2,1.2c-22.1-3.9-44.3-3.7-66.5-0.3c-2.2,0.3-5-0.2-6.8-1.3 c-15.7-10.2-31.7-20.2-50-25c-15.1-4-12-4.8-16.3,8.9c-5.1,16.4-7.1,33.4-6,50.6c0.1,1.2-0.8,2.7-1.6,3.8 c-6.6,7.9-11.7,16.6-14.8,26.4c-6,19-4.8,38.2-1,57.3c7.5,37.5,32.8,63.8,70.2,70.3c19.3,3.4,39.2,3.7,57.3,5.2 c20.2-1.5,38.9-1.6,57.1-4.5c31.8-5.1,55.8-22,67.8-52.7c4.2-10.7,6.5-22.4,7.9-33.8C-0.3,397.9-4.6,374.3-21.8,354.4z M-39.5,458.8c-3.3,15.6-12.4,26.3-27.6,31.8c-14.7,5.4-29.9,7.6-45.4,8.6c-7.5,0.5-15,0.1-22.5,0.1c-20.2,0.4-40.4-0.4-59.9-6.2 c-24.5-7.3-35.5-21.9-36.2-47.5c-0.3-9.1,0.7-17.9,5-26.1c8.5-16.5,23.2-22.3,40.6-22.6c9.5-0.1,19.1,0.7,28.7,1.6 c20.1,1.8,40-0.1,60-1.2c8.8-0.5,17.8-0.7,26.4,0.8c18.5,3.2,32.5,21.6,32.8,42.3C-37.6,446.5-38.3,452.8-39.5,458.8z" />
-                        <path
-                          d="M-191.5,424.5c-5.5,5.7-7.4,12.9-7.7,19.3c0,9.6,2.8,17.3,7.7,22.3c6.8,6.9,16.1,6.7,22.6-0.3c9.8-10.6,9.7-30.5,0-41 C-175.4,417.7-184.9,417.6-191.5,424.5z" />
-                        <path class="targerEye"
-                          d="M-99.4,423.7c-11.2,10.3-11.2,33,0,43.2c6.5,5.9,15.3,5.6,21.4-0.7c5.6-5.8,7.6-13.1,7.8-21c-0.2-7.9-2.2-15.1-7.9-20.9 C-84.2,418-93,417.8-99.4,423.7z" />
-                      </g>
-                    </g>
-                  </svg>
-                </h4>
-              </a>
-              <a target="_blank" href="https://www.linkedin.com/in/rana-zaeem-765a31255/">
-                <h4 id="linkedin">
-                  Linkedin
-                  <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512"
-                    xml:space="preserve">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-    
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-    
-                    <g id="SVGRepo_iconCarrier">
-                      <path class="lindekinPath"
-                        d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z " />
-                    </g>
-                  </svg>
-                </h4>
-              </a>
-            </div>
-          </div>
-        </footer>
+                 -->
+
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-    <script src="script.js"></script>
+    <footer>
+      <h2>Let Connect !</h2>
+      <div class="">
+        <div class="footer-links">
+          <!-- <a href="https://x.com/ranazaeem34/" target="_blank">
+            <h4>
+              Twitter
+              <svg fill="white" version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve">
+                <g id="Layer_10">
+                </g>
+                <g id="win10">
+                </g>
+                <g id="ssm">
+                </g>
+                <g id="mat_2">
+                </g>
+                <g id="ios">
+                </g>
+                <g id="fluent">
+                  <polygon points="21.26,26.59 22.66,28.64 9.41,44 6.23,44 	" />
+                  <polygon points="42.2,6 28.01,22.45 26.6,20.4 39.03,6 	" />
+                  <path d="M16.881,8l23.322,34H33.04L9.717,8H16.881 M17.934,6H5.92l26.066,38H44L17.934,6L17.934,6z" />
+                </g>
+              </svg>
+            </h4>
+          </a> -->
+          <a href="https://github.com/ubaidrashid">
+            <h4 id="github">
+              Gituhb
+              <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="-267 288.9 264.5 225.1" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M-21.8,354.4c-0.8-0.9-1.3-2.3-1.2-3.5c0.9-20.1-1.8-39.6-8.6-58.6c-0.9-2.4-2-3.3-4.5-2.6c-5.6,1.7-11.4,3-16.9,5 c-15.2,5.5-29.1,13.5-42.6,22.2c-1.4,0.9-3.5,1.5-5.2,1.2c-22.1-3.9-44.3-3.7-66.5-0.3c-2.2,0.3-5-0.2-6.8-1.3 c-15.7-10.2-31.7-20.2-50-25c-15.1-4-12-4.8-16.3,8.9c-5.1,16.4-7.1,33.4-6,50.6c0.1,1.2-0.8,2.7-1.6,3.8 c-6.6,7.9-11.7,16.6-14.8,26.4c-6,19-4.8,38.2-1,57.3c7.5,37.5,32.8,63.8,70.2,70.3c19.3,3.4,39.2,3.7,57.3,5.2 c20.2-1.5,38.9-1.6,57.1-4.5c31.8-5.1,55.8-22,67.8-52.7c4.2-10.7,6.5-22.4,7.9-33.8C-0.3,397.9-4.6,374.3-21.8,354.4z M-39.5,458.8c-3.3,15.6-12.4,26.3-27.6,31.8c-14.7,5.4-29.9,7.6-45.4,8.6c-7.5,0.5-15,0.1-22.5,0.1c-20.2,0.4-40.4-0.4-59.9-6.2 c-24.5-7.3-35.5-21.9-36.2-47.5c-0.3-9.1,0.7-17.9,5-26.1c8.5-16.5,23.2-22.3,40.6-22.6c9.5-0.1,19.1,0.7,28.7,1.6 c20.1,1.8,40-0.1,60-1.2c8.8-0.5,17.8-0.7,26.4,0.8c18.5,3.2,32.5,21.6,32.8,42.3C-37.6,446.5-38.3,452.8-39.5,458.8z" />
+                    <path
+                      d="M-191.5,424.5c-5.5,5.7-7.4,12.9-7.7,19.3c0,9.6,2.8,17.3,7.7,22.3c6.8,6.9,16.1,6.7,22.6-0.3c9.8-10.6,9.7-30.5,0-41 C-175.4,417.7-184.9,417.6-191.5,424.5z" />
+                    <path class="targerEye"
+                      d="M-99.4,423.7c-11.2,10.3-11.2,33,0,43.2c6.5,5.9,15.3,5.6,21.4-0.7c5.6-5.8,7.6-13.1,7.8-21c-0.2-7.9-2.2-15.1-7.9-20.9 C-84.2,418-93,417.8-99.4,423.7z" />
+                  </g>
+                </g>
+              </svg>
+            </h4>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/ubaid-qadri-1200172a9/?originalSubdomain=pk">
+            <h4 id="linkedin">
+              Linkedin
+              <svg fill="#ffffff" height="800px" width="800px" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512"
+                xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                <g id="SVGRepo_iconCarrier">
+                  <path class="lindekinPath"
+                    d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z " />
+                </g>
+              </svg>
+            </h4>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

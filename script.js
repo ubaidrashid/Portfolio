@@ -307,3 +307,19 @@ page2Animation()
 
 
 loadingAnimation()
+
+let harmburger = document.querySelector('.harmBurger');
+let navPart2 = document.querySelector('.nav-part2');
+let close2 = document.querySelector('.close');
+
+harmburger.addEventListener('click' , ()=>[
+navPart2.style.display = 'flex',
+harmburger.classList.add('none'),
+close2.classList.remove('none')
+])
+
+close2.addEventListener('click' , ()=>{
+    navPart2.style.display = 'none',
+harmburger.classList.remove('none'),
+close2.classList.add('none')
+})
